@@ -1,0 +1,36 @@
+{% extends "inicio/encabezado.html" %}
+
+<!-- MANDA EL NOMBRE QUE VA A RESIVIR EL TITULO EN EL ENCABEZADO -->
+{% block titulo %}Principal{% endblock %}
+{%block subtitulo%}DSM{%endblock%}
+
+<!-- icono de inicio -->
+{%block imagen%}
+{% load static %}
+{% static 'inicio/images/home.png' %}
+{% endblock %}
+
+{%block textoInicio%}Principal{%endblock%}
+<!-- esta parte sustitue loo que hay en el componente padre (encabezado) esto es la herencia -->
+ {% block encabezado %}Alumnos{% endblock %}
+ {% block subtituloEncabezado %}Lista de Alumnos{% endblock %} 
+{% block contenido %}
+
+
+
+
+			<!--Encabezdo -->
+			<!-- <div class="page-header">
+				<div class="page-title">
+					<h3>Alumnos
+				    <small>Lista de Alumnos </small></h3>
+				</div>
+
+				
+			</div> -->
+			<!-- /Encabezado-->
+
+
+		
+         
+{%endblock %}
